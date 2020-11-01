@@ -1,0 +1,355 @@
+@import "../../variables.scss";
+
+.graphSidecarHolder {
+  display: flex;
+  position: relative;
+  width: 100%;
+  // border: 1px solid red;
+}
+
+.graphSidecarHolder > video {
+  transition: margin 0.3s ease-in-out;
+}
+
+.graphSidecarHolder > img {
+  transition: margin 0.3s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  z-index: 600;
+  width: 23px;
+  height: 23px;
+  border-radius: 15px;
+  background-color: #bab9bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow > img {
+  width: 40%;
+  margin-right: 3%;
+  transform: rotate(180deg);
+}
+
+.arrow2 {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  z-index: 600;
+  width: 23px;
+  height: 23px;
+  border-radius: 15px;
+  background-color: #bab9bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow2 > img {
+  width: 40%;
+  margin-left: 5%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  display: flex;
+}
+
+.container {
+  width: 300px;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.singleDot {
+  width: 7px;
+  height: 7px;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
+.mediaHolder {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mediaPhoto {
+  width: 100%;
+  display: block;
+}
+
+.mediaHolder > video {
+  width: 100%;
+  margin-top: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.downloadButton {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $download-button;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+.downloadButton:focus {
+  outline: none;
+}
+
+// .downloadButton > img {
+//   float: center;
+//   margin-right: 8px;
+//   margin-bottom: -6px;
+// }
+
+.profilePicHolder {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  //width: 50vw;
+  margin-top: 0px;
+  // margin: auto;
+  padding: 2px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  border: 5px;
+  color: #fff;
+  background: linear-gradient(to top right, $gradient-first, $gradient-second);
+  background-clip: padding-box; /* !importanté */
+  border: solid 5px transparent; /* !importanté */
+  border-radius: 50%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to top right, $gradient-first, $gradient-second);
+  }
+}
+
+.profilePicWrapper {
+  width: 43px;
+  height: 43px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.profilePicWrapper > img {
+  width: 39px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.usernameHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.likesHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.postStats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.singlePostStat {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  color: $caption;
+  font-size: 20px;
+}
+.singlePostStat > img {
+  margin-right: 7px;
+}
+
+.captionHolder {
+  font-size: 20px;
+  text-align: left;
+  color: $caption;
+}
+.captionHolder > p {
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.playLogoHolder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playLogoHolder > img {
+  width: 22px;
+}
+.postInfoHolder {
+  display: block;
+}
+.postStatsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.captionButton {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid $caption-btn;
+  border-radius: 10px;
+  background-color: white;
+  color: $caption-btn;
+}
+
+.mediaLogo {
+  position: absolute;
+  width: 20px;
+  top: 15px;
+  right: 15px;
+}
+
+.modalHolder {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  // border: 1px solid red;
+}
+
+.modalHolder > img {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .mediaHolder {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .postStats {
+    display: flex;
+  }
+  .captionHolder > p {
+    word-wrap: break-word;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .mediaHolder {
+    width: 70%;
+    margin-top: 30px;
+  }
+  .likesHolder {
+    width: 100%;
+  }
+  .postInfoHolder {
+    width: 70%;
+  }
+  .postStats {
+    display: flex;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .mediaHolder {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 0px;
+  }
+  .postInfoHolder {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 32%;
+    align-items: flex-start;
+  }
+  .mediaHolder {
+    width: 100%;
+    margin-left: 0;
+  }
+  .postInfoHolder {
+    width: 100%;
+    margin-left: 0;
+  }
+  .username {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .username {
+    display: block;
+  }
+}

@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  border-top: 2px solid #E3E3E3;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profilePic {
+  width: 25px;
+  height: 25px;
+  background-color: #E3E3E3;
+  border-radius: 15px;
+}
+
+.username {
+  margin-left: 15px;
+  height: 10px;
+  width: 55px;
+  background-color: #E3E3E3;
+}
+
+.commentText {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.commentFirstLine {
+  height: 10px;
+  width: calc(100% - 40px);
+  background-color: #E3E3E3;
+  margin-left: 40px;
+}
+
+.commentSecondLine {
+  height: 10px;
+  background-color: #E3E3E3;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

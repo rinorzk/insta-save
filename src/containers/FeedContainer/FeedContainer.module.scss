@@ -1,0 +1,196 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 22px;
+  background-color: $mobile-nav;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  color: #848484;
+}
+.defaultInput {
+  // border: 1px solid blue;
+  background-color: white;
+}
+.inputWithContent {
+  // border: 1px solid red;
+}
+
+.inputWithContent.errorText {
+  display: none;
+}
+
+.submitButton {
+  padding: 19px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F0536B;
+  color: white;
+  font-size: 17px;
+}
+
+.submitButton:focus {
+  outline: none;
+}
+
+.inputHolder { 
+  border: 1px solid #E5E5E5;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+}
+
+.errorText {
+  font-size: 18px;
+  color: rgb(237, 73, 86);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .defaultInput {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+  .defaultInput > p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b3b3b;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  .inputHolder {
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    height: 60px;
+    display: flex;
+    padding: 3px;
+    margin-bottom: 80px;
+  }
+  .inputWithContent {
+    padding-top: 30px;
+  }
+  .inputWithContent > p:first-child {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .defaultInput {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+  .defaultInput > p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b3b3b;
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  .inputHolder {
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+    height: 60px;
+    display: flex;
+    padding: 3px;
+    margin-bottom: 80px;
+  }
+  .inputWithContent > p:first-child {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .defaultInput {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .defaultInput > p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3b3b3b;
+    width: 430px;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .inputHolder {
+    width: 550px;
+    margin-left: 0;
+  }
+  .defaultInput {
+    // border: 1px solid red;
+    height: 100vh;
+  }
+  .defaultInput > p:first-child > br {
+    display: none;
+  }
+  .inputWithContent {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .inputWithContent > p:first-child {
+    display: block;
+    font-size: 26px;
+    margin-top: 0;
+    margin-right: 30px;
+  }
+  .inputWithContent {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  .inputWithContent > p:first-child > br {
+    display: none;
+  }
+  .inputHolder {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .inputWithContent > p:first-child {
+    width: 420px;
+    text-align: left;
+  }
+}

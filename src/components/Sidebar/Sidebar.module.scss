@@ -1,0 +1,233 @@
+@import "../../variables.scss";
+
+.container {
+  width: 380px;
+  height: 100%;
+  background-color: $mobile-nav;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.profilePicHolder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  //width: 50vw;
+  // margin: auto;
+  padding: 2px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  border: 5px;
+  color: #fff;
+  background: linear-gradient(to top right, $gradient-first, $gradient-second);
+  background-clip: padding-box; /* !importanté */
+  border: solid 5px transparent; /* !importanté */
+  border-radius: 50%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(
+      to top right,
+      $gradient-first,
+      $gradient-second
+    );
+  }
+}
+
+.profilePicWrapper {
+  width: 125px;
+  height: 115px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.profilePicWrapper > img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.profileName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.profileUsername {
+  font-size: 22px;
+  color: $profile-name;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.profileUsername:visited,
+.profileUsername:link,
+.profileUsername:hover,
+.profileUsername:active {
+  text-decoration: none !important;
+}
+.profileStats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 60%;
+}
+.statInfo {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: $stats-info;
+}
+.statType {
+  font-size: 18px;
+  color: $profile-name;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.followButton {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 8px;
+  background: linear-gradient(to right, $gradient-first, $gradient-second);
+  width: 70%;
+}
+
+.privacyHolder {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  color: $darker-grey;
+  border-top: 1px solid $light-grey;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.privacyHolder > a {
+  cursor: pointer;
+}
+.menuLinkHolder {
+  width: 100%;
+  margin-top: 60px;
+}
+.menuLinkMobile {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.manuLinkLine {
+  position: absolute;
+  height: 70%;
+  width: 5px;
+  top: 15%;
+  right: 0;
+  background-color: $main-color;
+  border-radius: 5px;
+}
+.menuLinkMobile {
+  font-size: 22px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.menuLinkMobile > img {
+  width: 25px;
+  margin-right: 30px;
+  margin-left: 15%;
+}
+.menuLinkMobile > a {
+  width: 100%;
+  text-align: left;
+}
+.menuLinkMobile {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-height: 766px) {
+  .container {
+    overflow-y: auto;
+  }
+  .privacyHolder {
+    position: relative;
+    left: 0;
+  }
+  .menuLinkHolder {
+    margin-top: 40px;
+  }
+
+  .profilePicHolder {
+    width: 112px;
+    height: 112px;
+  }
+  .profilePicWrapper {
+    width: 96px;
+    height: 96px;
+  }
+  .profilePicWrapper > img {
+    width: 90px;
+    height: 90px;
+    margin-top: 3px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}

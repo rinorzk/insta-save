@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Circular";
+  src: url("./fonts/Circular-Std-Book.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Circular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Circular";
+}
+
+button, input, textarea {
+  font-family: "Circular";
+}
+
+code {
+  
+}
+
+input[type="checkbox" i]
+{
+  -webkit-appearance:checkbox;
+  display: inline-block;
+  appearance: checkbox;
+}
+
+input:not([type="image" i]) {
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}

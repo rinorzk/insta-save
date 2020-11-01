@@ -1,0 +1,130 @@
+@import "../../variables.scss";
+
+.title {
+  color: $title-text;
+  font-weight: bold;
+}
+.textHolder {
+  color: $main-text;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .textHolder {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  .textHolder {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .textHolder {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
+  }
+  .textHolder {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .textHolder {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  .textHolder {
+    font-size: 22px;
+    text-align: left;
+  }
+}
